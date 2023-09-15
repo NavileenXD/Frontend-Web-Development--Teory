@@ -1,0 +1,92 @@
+<!DOCTYPE html> 
+<html> 
+<head> 
+    <meta charset="UTF-8"> 
+    <title>Semantic Elements 18</title> 
+
+    <!-- Structural Elements-->
+    <!-- They don´t provide the browsers and search engines (like Google and Bing) what kind of data is being rendered -->
+    <!-- For example: div, span, etc-->
+
+
+    <!-- Semantic Elements-->
+    <!-- They help browsers and search engines (like Google and Bing) to understand the kind of data being rendered-->
+    <!-- like which part is for navigation, which is the main content, etc.-->
+    <!-- For example: header, nav, main-->
+
+    <style>
+
+        #header {
+            background-color: lightslategray;
+            padding: 24px;
+        }
+
+        #navbar{
+            background-color: antiquewhite;
+            padding: 8px;
+        }
+
+        #main-section{
+            background-color: aquamarine;
+            padding: 24px;
+        }
+
+        #section{
+            background-color: azure;
+            padding: 16px;
+        }
+
+        .article{
+            background-color: lightblue;
+            padding: 16px;
+            margin-top: 16px;
+            margin-bottom: 16px;
+        }
+
+        #footer{
+            background-color: lightsteelblue;
+            padding: 18px;
+        }
+    </style>
+    
+</head>
+    <body style="margin: 0;"> 
+        <header id="header"> <!-- Encabezado-->
+            <nav id="navbar"> <!-- navigation bar-->
+                <span>Menu 1</span>
+                <span>Menu 2</span>
+                <span>Menu 3</span>
+            </nav>
+        </header>
+        
+        <main id="main-section"> <!-- Main Section-->
+            <section id="section">
+                <article class="article">
+                    <header>
+                        <h3>Article Title One</h3>
+                        <a href="/">Author One</a>
+                    </header>
+                    <p>They help browsers and search They help browsers and search They help browsers and search They help browsers and search They help browsers and search </p>
+                </article>
+                <article class="article">
+                    <header>
+                        <h3>Article Title Two</h3>
+                        <a href="/">Author Two</a>
+                    </header>
+                    <p>They help browsers and search They help browsers and search They help browsers and search They help browsers and search They help browsers and search </p>
+                </article>
+                <article class="article">
+                    <header>
+                        <h3>Article Title Three</h3>
+                        <a href="/">Author Three</a>
+                    </header>
+                    <p>They help browsers and search They help browsers and search They help browsers and search They help browsers and search They help browsers and search </p>
+                
+                </article>
+            </section>
+        </main>
+        <footer id="footer">
+            <p>Copyright 2023</p>
+        </footer>
+    </body>
+</html>
