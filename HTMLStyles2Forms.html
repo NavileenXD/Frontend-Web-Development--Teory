@@ -1,0 +1,101 @@
+<!DOCTYPE html> 
+<html> 
+<head> 
+    <meta charset="UTF-8"> 
+    <title>Styles to Form 27</title> 
+    <style>
+        #register-form{
+            width: 600px;
+            background-color: rgb(204, 221, 236);
+            padding: 24px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .input-label{
+            margin: 0;
+            margin-bottom: 4px;
+            margin-top: 12px;
+        }
+
+        .input-item{
+            width: 100%;
+        }
+
+        #terms-check{
+            margin-top: 12px;
+            margin-bottom: 18px;
+        }
+
+    </style>
+
+
+</head>
+    <body style="background-color: rgb(81, 111, 139);"> 
+        <form id="register-form">
+            <h1 style="text-align: center;">Signup</h1>
+
+            <div>
+            <!-- Text input (name)  -->
+                <p class="input-label">Full Name</p>
+                <input class="input-item" type="text" name="fullname">
+            </div>
+
+            <div>
+                <!-- Email -->
+                <p class="input-label">Email</p>
+                <input class="input-item" type="email" name="email">
+            </div>
+
+            <div>
+                <!-- Password -->
+                <p class="input-label">Password</p>
+                <input class="input-item" type="password" name="password">
+            
+                <p class="input-label">Confirm Password</p>
+                <input class="input-item" type="password" name="confirm-password">
+            </div>
+
+            <div>
+                <!-- Selection (radio) -->
+                <p class="input-label">Gender</p>
+                <input type="radio" name="male" value="male">
+                Male </input>
+                <input type="radio" name="female" value="female">
+                Female </input>
+                <input type="radio" name="potato" value="potato">
+                Potato </input>     
+            </div>
+
+            <div>
+                <!-- Options list -->
+                <p class="input-label">Security Question</p>
+                <select class="input-item" name="security-question">
+                    
+                    <option value="first-pet-name">What was your first pet name?</option>
+                    <option value="first-job">What was your first job?</option>
+                    <option value="nick-name">What is your nickname?</option>
+                    <br>
+
+                </select>
+            </div>
+
+            <div>
+                <!-- Text area -->
+                <textarea class="input-item" name="answer" id="" cols="25" rows="6"></textarea> 
+            </div>
+
+            <div>
+                <!-- Checkbox -->
+                <input id="terms-check" type="checkbox" name="terms-conditions" value="accept"> I agree to accept the terms and conditions
+            </div>
+
+            <div>
+                <!-- Submit bottom -->
+                <input type="submit" value="Register"> 
+            </div>
+            
+        </form>
+       
+    </body>
+</html>
